@@ -2,8 +2,7 @@ import re
 
 class splitter():
 
-    basicWordsEn = ["the", "a", "an", "for", "and", "with", "their", "from", "you", "your", "that"]
-    basicWordsFr = ["tout", "a", "nos", "ces", "mes", "ses", "de", "du", "des", "le", "la", "les", "mon", "ton" "son", "ma", "ta", "sa", "au", "leurs"]
+    basicWords = ["the", "a", "an", "for", "and", "with"]
 
     def extract(fullDesc):
         basicSplit = splitter.splitString(fullDesc)
@@ -39,7 +38,7 @@ class splitter():
     def removeBasicWords(input):
         cleanedList = []
         for x in range(0, len(input)):
-            if (len(input[x]) > 2 and not input[x].lower() in splitter.basicWordsEn and not input[x].lower() in splitter.basicWordsFr):
+            if (len(input[x]) > 2 and not input[x].lower() in splitter.basicWords):
                 cleanedList.append(input[x])
 
         return cleanedList

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>85378a69-54fe-402d-9bd7-19fa5b6a21be</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>splittertests.py</StartupFile>
+    <StartupFile>removeDupplicatesTests.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="splittertests.py" />
+    <Compile Include="extractTests.py" />
+    <Compile Include="splitStringTests.py" />
+    <Compile Include="removeBasicWordsTests.py" />
+    <Compile Include="removeDupplicatesTests.py" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\splitter\splitter.pyproj">
